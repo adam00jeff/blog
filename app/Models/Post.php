@@ -19,6 +19,7 @@ class Post
     {
         base_path();
         //uses resource path laravel helper function to find path to resource folder
+
         if (!file_exists($path = resource_path("posts/{$slug}.html"))) {
             throw new ModelNotFoundException();
         }
